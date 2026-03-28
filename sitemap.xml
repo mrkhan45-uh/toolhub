@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Base Domain -->
+    <url>
+        <loc>https://www.yourdomain.com/</loc>
+        <lastmod>2026-03-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- PDF Tools -->
+    <url><loc>https://www.yourdomain.com/tools/compress-pdf.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/merge-pdf.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/split-pdf.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/pdf-to-word.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/word-to-pdf.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/pdf-to-jpg.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/jpg-to-pdf.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/rotate-pdf.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/unlock-pdf.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/add-watermark-pdf.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+    <!-- Image Tools -->
+    <url><loc>https://www.yourdomain.com/tools/image-compressor.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/image-resizer.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/jpg-to-png.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/png-to-jpg.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/crop-image.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/resize-social.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/convert-webp.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/image-base64.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/add-text-image.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/meme-generator.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+    <!-- Converter Tools -->
+    <url><loc>https://www.yourdomain.com/tools/jpg-to-pdf-converter.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/pdf-to-png-converter.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/text-to-pdf.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/json-to-csv.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/csv-to-json.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/html-to-pdf.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/markdown-to-html.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/webp-to-jpg.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/png-to-svg.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/base64-encode-decode.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+    <!-- Text Tools -->
+    <url><loc>https://www.yourdomain.com/tools/word-counter.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/character-counter.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/case-converter.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/remove-duplicate-lines.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/text-sorter.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/reverse-text.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/slug-generator.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/lorem-ipsum.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/fancy-text.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/password-gen-text.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+    <!-- Developer Tools -->
+    <url><loc>https://www.yourdomain.com/tools/json-formatter.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/json-validator.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/sql-formatter.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/html-minifier.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/css-minifier.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/js-minifier.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/regex-tester.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/uuid-generator.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/jwt-decoder.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/unix-timestamp.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+    <!-- CSS Tools -->
+    <url><loc>https://www.yourdomain.com/tools/css-gradient.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/box-shadow.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/border-radius.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/flexbox-playground.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/css-grid-gen.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/color-palette.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/hex-to-rgb.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/glassmorphism.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/neumorphism.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/css-button.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+    <!-- Security Tools -->
+    <url><loc>https://www.yourdomain.com/tools/base64-tool.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/md5-hash.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/sha-hash.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/password-strength.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/random-password.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/url-encoder.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/text-encrypt.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/qr-code.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/token-gen.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/file-checksum.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+    <!-- Calculators -->
+    <url><loc>https://www.yourdomain.com/tools/age-calculator.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/bmi-calculator.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/percentage.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/loan-emi.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/discount.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/gpa-calculator.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/time-calc.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/date-diff.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/salary-calc.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/roi-calc.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+    <!-- Social Tools -->
+    <url><loc>https://www.yourdomain.com/tools/yt-thumb-dl.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/ig-resizer.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/tiktok-cover.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/hashtag-gen.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/bio-generator.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/caption-formatter.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/yt-title-gen.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/thumb-preview.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/social-grid.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/pfp-maker.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+    <!-- File & Utility Tools -->
+    <url><loc>https://www.yourdomain.com/tools/zip-compressor.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/file-converter.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/metadata-viewer.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/file-rename.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/drag-drop-ui.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/file-preview.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/clipboard-manager.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/temp-saver.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/file-reducer.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.yourdomain.com/tools/webrtc-share.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+</urlset>

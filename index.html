@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A fully responsive, modern multi-tool website featuring 100 useful online tools including PDF editors, image converters, calculators, and more. All tools run securely in your browser.">
+    <title>ToolHub - 100 Free Online Tools for Everything</title>
+    
+    <!-- Modern Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="light-mode">
+
+    <!-- Sticky Header -->
+    <header class="header">
+        <div class="container header-content">
+            <a href="/" class="logo">
+                <i class="fas fa-layer-group"></i> ToolHub
+            </a>
+            <div class="header-actions">
+                <button id="theme-toggle" class="icon-btn" aria-label="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- AdSense Header Slot -->
+    <div class="ad-container ad-header">
+        <div class="ad-placeholder">AdSense Header (728x90)</div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content container">
+        
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>100 Free Online Tools for Everyone</h1>
+            <p>PDFs, Images, Text, Development, and more. Secure, fast, and completely free.</p>
+            
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" id="tool-search" placeholder="Search for a tool (e.g. 'PDF to Word', 'Image Resizer')...">
+            </div>
+            
+            <div class="category-filters" id="category-filters">
+                <button class="chip active" data-filter="all">All</button>
+                <button class="chip" data-filter="PDF">PDF</button>
+                <button class="chip" data-filter="Image">Image</button>
+                <button class="chip" data-filter="Converter">Converter</button>
+                <button class="chip" data-filter="Text">Text</button>
+                <button class="chip" data-filter="Developer">Developer</button>
+                <button class="chip" data-filter="CSS">CSS & Design</button>
+                <button class="chip" data-filter="Security">Security</button>
+                <button class="chip" data-filter="Calculator">Calculators</button>
+                <button class="chip" data-filter="Social">Social</button>
+                <button class="chip" data-filter="File">File & Utility</button>
+            </div>
+        </section>
+
+        <!-- Tools Grid -->
+        <section class="tools-grid" id="tools-grid">
+            <!-- Tool cards will be generated here by script.js -->
+        </section>
+        
+        <div id="no-results" class="no-results hidden">
+            <i class="fas fa-search-minus"></i>
+            <p>No tools found matching your search.</p>
+        </div>
+
+    </main>
+
+    <!-- AdSense In-Content / Footer Slot -->
+    <div class="ad-container ad-footer">
+        <div class="ad-placeholder">AdSense Footer (Responsive)</div>
+    </div>
+
+    <!-- Toast Notification Container -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3><i class="fas fa-layer-group"></i> ToolHub</h3>
+                <p>100% Free online tools running directly in your browser. No server uploads required.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ToolHub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+</body>
+</html>

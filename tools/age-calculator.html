@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator - Free Online Tool | ToolHub</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    
+    <style>
+        .calc-wrapper {
+            max-width: 600px;
+            margin: 0 auto;
+            background: var(--surface);
+            padding: 2.5rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border);
+        }
+        .form-group { margin-bottom: 1.5rem; }
+        .form-group label { display: block; margin-bottom: 0.5rem; font-weight: 500; }
+        .form-group input {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            font-size: 1.1rem;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            background: var(--bg-color);
+            color: var(--text-main);
+        }
+        .result-box {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            background: rgba(79, 70, 229, 0.05);
+            border-radius: var(--radius);
+            border-left: 4px solid var(--primary);
+            display: none;
+        }
+        .result-main {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        .result-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            text-align: center;
+        }
+        .result-item {
+            background: var(--surface);
+            padding: 1rem;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+        .result-item span { display: block; font-size: 1.5rem; font-weight: 600; }
+        .result-item label { font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase;}
+    </style>
+</head>
+<body class="light-mode">
+    <header class="header">
+        <div class="container header-content">
+            <a href="../index.html" class="logo"><i class="fas fa-layer-group"></i> ToolHub</a>
+            <button id="theme-toggle" class="icon-btn"><i class="fas fa-moon"></i></button>
+        </div>
+    </header>
+
+    <main class="main-content container">
+        <nav aria-label="breadcrumb" style="margin: 1rem 0; color: var(--text-muted); font-size: 0.9rem;">
+            <a href="../index.html" style="color: var(--primary);">Home</a> &gt; <span>Calculators</span> &gt; <strong>Age Calculator</strong>
+        </nav>
+
+        <section class="tool-header">
+            <h1><i class="fas fa-birthday-cake"></i> Age Calculator</h1>
+            <p style="color: var(--text-muted); font-size: 1.1rem;">Calculate your exact age in years, months, and days.</p>
+        </section>
+
+        <!-- Workspace -->
+        <section class="tool-workspace" id="workspace">
+            <div class="calc-wrapper">
+                <div class="form-group">
+                    <label>Date of Birth</label>
+                    <input type="date" id="dob" required>
+                </div>
+                <div class="form-group">
+                    <label>Today's Date</label>
+                    <input type="date" id="target-date">
+                </div>
+                
+                <button class="btn" style="width: 100%;" id="btn-calc">Calculate Age</button>
+
+                <div class="result-box" id="result-box">
+                    <div class="result-main" id="res-exact"></div>
+                    <div class="result-grid">
+                        <div class="result-item"><span id="res-months"></span><label>Total Months</label></div>
+                        <div class="result-item"><span id="res-weeks"></span><label>Total Weeks</label></div>
+                        <div class="result-item"><span id="res-days"></span><label>Total Days</label></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="toast-container" class="toast-container"></div>
+
+    <script src="../js/script.js"></script>
+    <script>
+        const dobInput = document.getElementById('dob');
+        const targetInput = document.getElementById('target-date');
+        const btnCalc = document.getElementById('btn-calc');
+        const resBox = document.getElementById('result-box');
+        
+        // Set today's date out of the box
+        const today = new Date().toISOString().split('T')[0];
+        targetInput.value = today;
+
+        btnCalc.addEventListener('click', () => {
+            const dobDate = new Date(dobInput.value);
+            const targetDate = new Date(targetInput.value);
+
+            if (!dobInput.value || !targetInput.value) {
+                showToast('Please select valid dates', 'error');
+                return;
+            }
+
+            if (dobDate > targetDate) {
+                showToast('Date of Birth cannot be after Today\'s Date!', 'error');
+                return;
+            }
+
+            // Calculate precise Years, Months, Days
+            let years = targetDate.getFullYear() - dobDate.getFullYear();
+            let months = targetDate.getMonth() - dobDate.getMonth();
+            let days = targetDate.getDate() - dobDate.getDate();
+
+            if (days < 0) {
+                months--;
+                // Get days in the previous month
+                const tempDate = new Date(targetDate.getFullYear(), targetDate.getMonth(), 0);
+                days += tempDate.getDate();
+            }
+
+            if (months < 0) {
+                years--;
+                months += 12;
+            }
+
+            document.getElementById('res-exact').textContent = 
+                `${years} Years, ${months} Months, ${days} Days`;
+
+            // Calculate Totals
+            const timeDiff = targetDate.getTime() - dobDate.getTime();
+            const calcDays = Math.floor(timeDiff / (1000 * 3600 * 24));
+            const calcWeeks = Math.floor(calcDays / 7);
+            const calcMonths = (years * 12) + months;
+
+            document.getElementById('res-months').textContent = calcMonths;
+            document.getElementById('res-weeks').textContent = calcWeeks;
+            document.getElementById('res-days').textContent = calcDays;
+
+            resBox.style.display = 'block';
+            showToast('Age calculated successfully!', 'success');
+        });
+    </script>
+</body>
+</html>

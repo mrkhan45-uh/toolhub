@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Formatter & Validator - Free Online Tool | ToolHub</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    
+    <style>
+        .json-workspace {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        @media (max-width: 768px) {
+            .json-workspace { grid-template-columns: 1fr; }
+        }
+        .code-area {
+            width: 100%;
+            height: 500px;
+            padding: 1rem;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 14px;
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            background: var(--surface);
+            color: var(--text-main);
+            resize: none;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .code-area:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+        .json-actions {
+            display: flex;
+            gap: 1rem;
+            grid-column: 1 / -1;
+            justify-content: center;
+            margin: 1.5rem 0;
+        }
+        .error-message {
+            color: #ef4444;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+            min-height: 20px;
+        }
+    </style>
+</head>
+<body class="light-mode">
+
+    <header class="header">
+        <div class="container header-content">
+            <a href="../index.html" class="logo"><i class="fas fa-layer-group"></i> ToolHub</a>
+            <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme"><i class="fas fa-moon"></i></button>
+        </div>
+    </header>
+
+    <main class="main-content container">
+        <nav aria-label="breadcrumb" style="margin: 1rem 0; color: var(--text-muted); font-size: 0.9rem;">
+            <a href="../index.html" style="color: var(--primary);">Home</a> &gt; <span>Developer</span> &gt; <strong>JSON Formatter & Validator</strong>
+        </nav>
+
+        <section class="tool-header">
+            <h1><i class="fas fa-brackets-curly"></i> JSON Formatter & Validator</h1>
+            <p style="color: var(--text-muted); font-size: 1.1rem;">Format, beautify, validate and minify JSON data instantly.</p>
+        </section>
+
+        <!-- Workspace -->
+        <section class="tool-workspace" id="workspace">
+            
+            <div class="json-actions">
+                <button class="btn" id="btn-format"><i class="fas fa-align-left"></i> Format / Beautify</button>
+                <button class="btn secondary" id="btn-minify"><i class="fas fa-compress-alt"></i> Minify</button>
+                <button class="btn secondary" id="btn-clear"><i class="fas fa-trash"></i> Clear</button>
+            </div>
+            
+            <div class="json-workspace">
+                <div>
+                    <h3>Input JSON</h3>
+                    <textarea id="json-input" class="code-area" placeholder="Paste your raw JSON here..."></textarea>
+                    <div id="json-error" class="error-message"></div>
+                </div>
+                <div>
+                    <h3 style="display:flex; justify-content:space-between;">
+                        Formatted Result
+                        <button class="btn secondary" style="padding: 0.25rem 0.75rem; font-size: 0.8rem;" id="btn-copy">
+                            <i class="fas fa-copy"></i> Copy
+                        </button>
+                    </h3>
+                    <textarea id="json-output" class="code-area" readonly placeholder="Output will appear here..."></textarea>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <div id="toast-container" class="toast-container"></div>
+
+    <script src="../js/script.js"></script>
+    <script>
+        const input = document.getElementById('json-input');
+        const output = document.getElementById('json-output');
+        const errorMsg = document.getElementById('json-error');
+        
+        const btnFormat = document.getElementById('btn-format');
+        const btnMinify = document.getElementById('btn-minify');
+        const btnClear = document.getElementById('btn-clear');
+        const btnCopy = document.getElementById('btn-copy');
+
+        function processJSON(action) {
+            errorMsg.textContent = '';
+            const rawData = input.value.trim();
+            
+            if(!rawData) {
+                showToast('Please provide JSON input', 'error');
+                return;
+            }
+
+            try {
+                // Validate JSON by parsing
+                const parsed = JSON.parse(rawData);
+                
+                if(action === 'format') {
+                    output.value = JSON.stringify(parsed, null, 4);
+                    showToast('Valid JSON! Formatted successfully.', 'success');
+                } else if(action === 'minify') {
+                    output.value = JSON.stringify(parsed);
+                    showToast('Valid JSON! Minified successfully.', 'success');
+                }
+                
+                errorMsg.style.color = '#10b981';
+                errorMsg.textContent = 'Valid JSON';
+                
+            } catch (err) {
+                errorMsg.style.color = '#ef4444';
+                errorMsg.textContent = 'Invalid JSON: ' + err.message;
+                showToast('Invalid JSON provided.', 'error');
+            }
+        }
+
+        btnFormat.addEventListener('click', () => processJSON('format'));
+        btnMinify.addEventListener('click', () => processJSON('minify'));
+        
+        btnClear.addEventListener('click', () => {
+            input.value = '';
+            output.value = '';
+            errorMsg.textContent = '';
+            input.focus();
+        });
+
+        btnCopy.addEventListener('click', () => {
+            if(!output.value) return;
+            navigator.clipboard.writeText(output.value).then(() => {
+                showToast('JSON copied to clipboard!', 'success');
+            });
+        });
+    </script>
+</body>
+</html>
